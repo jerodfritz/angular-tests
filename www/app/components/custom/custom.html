@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="panel large-4 columns">
+    <b>JSON</b>
+    <pre ng-bind="custom.name | json"></pre>
+  </div>
+  <div class="panel large-7 columns">
+    <div>
+      <b>OUTPUT</b>
+      <hr/>
+      <b>First:</b> <input ng-model='custom.name.first' placeholder="First Name" /><br/>
+      <b>Last:</b> <input ng-model='custom.name.last' placeholder="Last Name" />
+      
+      <b>First:</b><span ng-bind="custom.name.first"></span>
+      <b>Last:</b> <span ng-bind="custom.name.last" ></span>
+    </div>
+  </div>
+
+</div>

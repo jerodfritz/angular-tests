@@ -1,0 +1,29 @@
+<!doctype html>
+<html ng-app="application">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Bootcamp</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/lib/foundation/css/foundation.css" />
+    <link rel="stylesheet" href="/app/app.css" />
+  </head>
+  <body>
+
+    <div ng-include="'app/components/navbar/navbar.html'"></div>
+    
+    <div ng-view></div>
+    
+    <script src="/lib/angular/angular.js"></script>
+    <script src="/lib/angular-route/angular-route.js"></script>
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/modernizr/modernizr.js"></script>
+    <script src="/lib/foundation/js/foundation.min.js"></script>
+    <script src="/app/app.js"></script>
+    <script src="/app/components/nameDisplay/nameDisplay.js"></script>
+    <script src="/app/components/custom/custom.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
+

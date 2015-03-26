@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="panel large-12 columns">
+    <div>
+      <pre ng-bind="mc.name | json"></pre>
+      <input ng-model='mc.name.first' />
+      <hr/>
+      <p ng-bind="mc.name.first">
+        First
+      </p>
+      <p ng-bind="mc.name.last">
+        Last
+      </p>
+    </div>
+  </div>
+
+</div>
