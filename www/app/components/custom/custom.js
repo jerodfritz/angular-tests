@@ -1,7 +1,8 @@
-angular.module("custom",["ngRoute"])
-  .config(function($routeProvider) {
-    $routeProvider
-      .when("/custom", {
+angular.module("custom",["ui.router"])
+  .config(function($stateProvider) {
+    $stateProvider
+      .state("custom", {
+        url: "/custom",
         templateUrl : "/app/components/custom/custom.html",
         controller: "CustomController",
         controllerAs: "custom"
@@ -17,3 +18,4 @@ angular.module("custom",["ngRoute"])
       last : "FritzCustom"
     };
   });
+  

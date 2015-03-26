@@ -1,6 +1,4 @@
-angular.module("application", ["ngRoute","nameDisplay","custom"])
-  .config(function($routeProvider) {
-    $routeProvider.otherwise({
-        redirectTo: "/name"
-      });
-  });
+angular.module("application", ["ui.router", "nameDisplay", "custom", "watchThis", "promises"])
+.config(function($stateProvider, $urlRouterProvider) {
+  $urlRouterProvider.otherwise("/custom");
+});

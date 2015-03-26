@@ -11,19 +11,23 @@
 
     <div ng-include="'app/components/navbar/navbar.html'"></div>
     
-    <div ng-view></div>
+    <div ui-view></div>
     
-    <script src="/lib/angular/angular.js"></script>
-    <script src="/lib/angular-route/angular-route.js"></script>
     <script src="/lib/jquery/dist/jquery.min.js"></script>
     <script src="/lib/modernizr/modernizr.js"></script>
-    <script src="/lib/foundation/js/foundation.min.js"></script>
-    <script src="/app/app.js"></script>
-    <script src="/app/components/nameDisplay/nameDisplay.js"></script>
-    <script src="/app/components/custom/custom.js"></script>
+    <script src="/lib/foundation/js/foundation.min.js"></script>    
+    <script src="/lib/foundation/js/foundation/foundation.slider.js"></script>
     <script>
       $(document).foundation();
     </script>
+    <script src="/lib/angular/angular.js"></script>
+    <script src="/lib/ui-router/release/angular-ui-router.js"></script>
+    <script src="/app/app.js"></script>
+    <script src="/app/components/nameDisplay/nameDisplay.js"></script>
+    <script src="/app/components/custom/custom.js"></script>
+    <script src="/app/components/watchThis/watchThis.js"></script>
+    <script src="/app/components/promises/promises.js"></script>
+    
   </body>
 </html>
 
